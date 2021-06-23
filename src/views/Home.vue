@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-container class="d-flex justify-center" fluid>
+    <category-card title="Доступ пользователей" icon="mdi-account-group"></category-card>
+    <category-card title="Касса" icon="mdi-cash-register"></category-card>
+    <category-card title="Кредитный контроль" icon="mdi-credit-card"></category-card>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  import CategoryCard from "../components/Home/CategoryCard";
+  export default {
+    name: 'Home',
+
+    components: {
+      CategoryCard
+    },
   }
-}
 </script>
